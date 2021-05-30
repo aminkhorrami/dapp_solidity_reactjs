@@ -25,7 +25,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "lint": "eslint --ext js,jsx,ts,tsx --fix",
+    "husky:install": "husky install",
+    "chakra:types": "chakra-cli tokens ./src/theme/index.ts",
+    "postinstall": "yarn husky:install && yarn chakra:types"
   },
   "eslintConfig": {
     "extends": "react-app"
