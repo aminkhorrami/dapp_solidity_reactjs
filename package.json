@@ -29,7 +29,6 @@
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "eslint --ext js,jsx,ts,tsx --fix",
     "husky:install": "husky install",
-    "chakra:types": "chakra-cli tokens ./src/theme/index.ts",
     "postinstall": "yarn husky:install && yarn chakra:types"
   },
   "eslintConfig": {
@@ -44,10 +43,9 @@
   "devDependencies": {
     "@types/react": "^17.0.5",
     "@types/react-albus": "^2.0.5",
-    "@types/react-select": "^4.0.15",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
-    "eslint": "^7.26.0",
+    "eslint": "^5.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
