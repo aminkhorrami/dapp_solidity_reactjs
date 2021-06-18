@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Initial page
+# Projects main questions
 
 ## Can I become who I want to be?
 
@@ -11,6 +10,3 @@ Yes, after a few months we finally found the answer. Sadly, Mike is on vacations
 
 
 
-=======
-# solidity_game_reactjs
->>>>>>> 8de6eac07f235dc0ff0ee321b070d5936d969d52
