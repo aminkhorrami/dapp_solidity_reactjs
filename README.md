@@ -1,2 +1,2 @@
-# Initial page
+# Solidity Ponzy Game
 
