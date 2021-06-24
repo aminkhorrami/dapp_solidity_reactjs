@@ -3,6 +3,7 @@ import Web3 from "web3";
 import Navbar from "./navbar";
 import Marketplace from "../abis/Marketplace.json";
 import Main from "./main.js";
+import MacBookOpening from "./MacBookOpening";
 import "./App.css";
 
 const App = () => {
@@ -88,7 +89,7 @@ const App = () => {
   return (
     <div>
       <Navbar account={stateTx.account} />
-      <div className="container-fluid mt-5">
+      {/* <div className="container-fluid mt-5">
         <div className="row">
           <main role="main" className="col-lg-12 d-flex text-center">
             {stateTx.loading ? (
@@ -104,7 +105,8 @@ const App = () => {
             )}
           </main>
         </div>
-      </div>
+      </div> */}
+      <MacBookOpening />
     </div>
   );
 };
