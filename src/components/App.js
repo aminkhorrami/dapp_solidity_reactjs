@@ -50,14 +50,16 @@ const App = () => {
         const product = await marketplace.methods.products(i).call();
         products.push(product);
       }
-      setStateTx({
-        ...stateTx,
-        productCount,
-        products: products,
-        account: accounts[0],
-        marketplace,
-        loading: false,
-      });
+      setTimeout(() => {
+        setStateTx({
+          ...stateTx,
+          productCount,
+          products: products,
+          account: accounts[0],
+          marketplace,
+          loading: false,
+        });
+      }, 5000);
     } else {
       window.alert("Marketplace contract not deployed to detected network.");
     }
@@ -89,12 +91,12 @@ const App = () => {
   return (
     <div>
       <Navbar account={stateTx.account} />
-      {/* <div className="container-fluid mt-5">
+      <div className="container-fluid mt-5">
         <div className="row">
           <main role="main" className="col-lg-12 d-flex text-center">
             {stateTx.loading ? (
               <div id="loader" className="text-center">
-                <p className="text-center">Loading...</p>
+                <MacBookOpening />
               </div>
             ) : (
               <Main
@@ -105,8 +107,7 @@ const App = () => {
             )}
           </main>
         </div>
-      </div> */}
-      <MacBookOpening />
+      </div>
     </div>
   );
 };
